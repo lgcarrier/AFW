@@ -512,7 +512,7 @@ span.navbar-trigger-close a:hover {
   display: table;
   width: 100%;
   height: 100%;
-  background-image: url("../img/bg-intro.jpg");
+  background-image: url("../img/bg/oracle_buildings.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -536,11 +536,11 @@ span.navbar-trigger-close a:hover {
 }
 #intro .intro-body .logo > h1 {
   display: block;
-  width: 110px;
+  width: 100%;
   height: 110px;
   line-height: 110px;
   color: rgba(255, 255, 255, 0.8);
-  font-family: 'Raleway', sans-serif;
+  /*font-family: 'Raleway', sans-serif;*/
   font-size: 80px;
   font-weight: 700;
   text-align: center;
@@ -551,7 +551,7 @@ span.navbar-trigger-close a:hover {
 }
 #intro .intro-body .intro-text {
   margin-top: 40px;
-  font-family: 'Raleway', sans-serif;
+  /*font-family: 'Raleway', sans-serif;*/
 }
 #intro .intro-body .intro-text h2 {
   color: #fff;
@@ -582,7 +582,7 @@ span.navbar-trigger-close a:hover {
   }
 }
 #intro .intro-body .page-scroll a.btn {
-  font-family: 'Raleway', sans-serif;
+  /*font-family: 'Raleway', sans-serif;*/
 }
 @media (min-width: 768px) {
   #intro .intro-body .page-scroll a.btn {
@@ -627,7 +627,7 @@ span.navbar-trigger-close a:hover {
 /*  FUN FACT SECTION
 /*---------------------------------------*/
 #fun-fact > .section-inner .parallax > .bcg {
-  background-image: url("../img/bg-fun-fact.jpg");
+  background-image: url("../img/bg/team_oracle_boats.jpg");
 }
 #fun-fact > .section-inner .section-content .section-title {
   color: #b7ada4;
@@ -677,7 +677,7 @@ span.navbar-trigger-close a:hover {
 /*  QUOTE SECTION
 /*---------------------------------------*/
 #quote > .section-inner .parallax > .bcg {
-  background-image: url("../img/bg-quote.jpg");
+  background-image: url("../img/bg/servers.jpg");
 }
 #quote > .section-inner .section-content {
   padding-top: 100px;
@@ -700,7 +700,7 @@ span.navbar-trigger-close a:hover {
 /*  KEEP IN TOUCH SECTION
 /*---------------------------------------*/
 #keep-in-touch > .section-inner .parallax > .bcg {
-  background-image: url("../img/bg-keep-in-touch.jpg");
+  background-image: url("../img/bg/penguin_crowd.jpg");
 }
 #keep-in-touch > .section-inner .section-content .section-title {
   color: #b7ada4;
@@ -827,6 +827,9 @@ span.navbar-trigger-close a:hover {
   }
 }
 
+#meet-the-team .row.team {
+    padding-bottom: 15px;
+}
 
 /*---------------------------------------*/
 /*  TESTIMONIALS SECTION
@@ -840,7 +843,6 @@ span.navbar-trigger-close a:hover {
 #testimonials > .section-inner .section-content .section-title > .section-line {
   background-color: #b7ada4;
 }
-
 
 /*---------------------------------------*/
 /*  COMING SOON SECTION
