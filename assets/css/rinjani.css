@@ -599,7 +599,7 @@ span.navbar-trigger-close a:hover {
 
 #intro .intro-body .logo > h1 {
     display: block;
-    width: 100%;
+    width: 200px;
     height: 110px;
     line-height: 110px;
     color: rgba(255, 255, 255, 0.8);
