@@ -1,7 +1,19 @@
 # APEXFramework
 =============
 
-## Framework for Oracle Application Express (APEX)
+## version 5.x
+
+TODO: Refactoring complet de l'installation de AFW pour exécuter un seul script @install_afw_5_0_0.sql qui va s'occuper de:
+* créer le schéma AFW et ses objets
+* créer le workspace APEX
+* importer les applications APEX (et leurs métadonnées)
+
+TODO: Refactoring complet de la désinstallation de AFW pour exécuter un seul script @uninstall_afw_5_0_0.sql qui va s'occuper de:
+* détruire le schéma AFW et ses objets
+* détruire le workspace APEX (et ses applications)
+
+
+## ANCIENNES VERSIONS - Framework for Oracle Application Express (APEX)
 
 ### Ce qui est important de savoir :
 	-Il y a deux scripts a exécuter pour l'installation complète de AFW (Un avec SYS, l'autre avec AFW_040215)
