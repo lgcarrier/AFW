@@ -1,6 +1,9 @@
 # APEXFramework
 =============
 
+https://apexframework.atlassian.net/
+https://orclapex-afw.slack.com
+
 ## version 5.x
 
 TODO: Refactoring complet de l'installation de AFW pour exécuter un seul script @install_afw_5_0_0.sql qui va s'occuper de:
