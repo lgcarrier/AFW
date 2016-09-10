@@ -1,0 +1,12 @@
+spool install_meta_log.txt;
+@pre_apps.sql;
+@f1000002_meta.sql;
+@f1000003_meta.sql;
+@f1000008_meta.sql;
+@f1000005_meta.sql;
+@f1000006_meta.sql;
+@f1000007_meta.sql;
+@f1000001_meta.sql;
+@f1000004_meta.sql;
+@post_apps.sql;
+spool off;

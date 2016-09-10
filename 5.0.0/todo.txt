@@ -1,0 +1,13 @@
+*** INSTALL ***
+validations
+-workspace apex AFW existe
+-schema bd AFW existe 
+
+creer
+-schema (afw)
+-workspace apex (afw_internal)
+-applications apex (afw)
+
+metadonnees
+-metadonnees (afw)
+-domaine (afw)
