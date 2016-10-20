@@ -1,0 +1,23 @@
+SET DEFINE OFF;
+CREATE TABLE AFW_21_PLUGN_ITEM_MENU
+(
+  SEQNC                   NUMBER(10),
+  REF_ITEM_MENU           NUMBER(10),
+  REF_PLUGN_MENU          NUMBER(10),
+  NIV_ITEM                NUMBER(3),
+  ETEND_NOMBR_COLN        NUMBER(3)             DEFAULT 1,
+  RANG_ITEM               NUMBER(3)             DEFAULT 1,
+  COLN_ITEM               NUMBER(3)             DEFAULT 1,
+  DATE_CREAT              DATE,
+  UTILS_CREAT             VARCHAR2(123 BYTE),
+  DATE_MODFC              DATE,
+  UTILS_MODFC             VARCHAR2(123 BYTE),
+  DNR_REF_PRODT           NUMBER(10),
+  REF_DV_CONTN_ITEM_MENU  NUMBER(10),
+  REF_DV_ALIGN            NUMBER(10)
+)
+LOGGING 
+NOCOMPRESS 
+NOCACHE
+MONITORING
+/

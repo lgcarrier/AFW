@@ -1,0 +1,6 @@
+SET DEFINE OFF;
+ALTER TABLE AFW_14_DOMN_VALR ADD (
+  CONSTRAINT AFW_14_DOMN_VALR_CK2
+  CHECK ((REF_PRODT is null and DNR_REF_PRODT is null and REF_DOMN is not null) or  (REF_PRODT is not null and DNR_REF_PRODT is not null and REF_DOMN is null))
+  ENABLE VALIDATE)
+/

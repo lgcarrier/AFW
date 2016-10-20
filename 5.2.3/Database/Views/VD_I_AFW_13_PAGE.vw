@@ -1,0 +1,67 @@
+SET DEFINE OFF;
+create or replace force view vd_i_afw_13_page
+(
+  seqnc
+ ,numr_apex
+ ,nom
+ ,descr
+ ,date_creat
+ ,utils_creat
+ ,date_modfc
+ ,utils_modfc
+ ,ref_struc_aplic
+ ,indic_prise_charg_afw01
+ ,indic_prise_charg_afw04
+ ,ref_mesg_suprs_specf
+ ,indic_prise_charg_afw19
+ ,indic_prise_charg_afw13_navgt
+ ,indic_prise_charg_afw18
+ ,ref_page_rechr
+ ,indic_prise_charg_afw14_popup
+ ,indic_prise_charg_afw13_confr
+ ,prefx_mesg
+ ,date_dernr_maj_refrn_apex
+ ,ref_mesg_sucs_specf
+ ,ref_mesg_echec_specf
+ ,ref_mesg_fetch_specf
+ ,ref_mesg_range_suprm_specf
+ ,ref_mesg_range_modf_specf
+ ,ref_mesg_range_inser_specf
+ ,ref_mesg_aucun_don_trouv
+ ,ref_mesg_trop_don_trouv
+ ,ref_aplic
+ ,dnr_ref_aplic
+)
+as
+  select seqnc
+        ,numr_apex
+        ,nom
+        ,descr
+        ,date_creat
+        ,utils_creat
+        ,date_modfc
+        ,utils_modfc
+        ,ref_struc_aplic
+        ,indic_prise_charg_afw01
+        ,indic_prise_charg_afw04
+        ,ref_mesg_suprs_specf
+        ,indic_prise_charg_afw19
+        ,indic_prise_charg_afw13_navgt
+        ,indic_prise_charg_afw18
+        ,ref_page_rechr
+        ,indic_prise_charg_afw14_popup
+        ,indic_prise_charg_afw13_confr
+        ,prefx_mesg
+        ,date_dernr_maj_refrn_apex
+        ,ref_mesg_sucs_specf
+        ,ref_mesg_echec_specf
+        ,ref_mesg_fetch_specf
+        ,ref_mesg_range_suprm_specf
+        ,ref_mesg_range_modf_specf
+        ,ref_mesg_range_inser_specf
+        ,ref_mesg_aucun_don_trouv
+        ,ref_mesg_trop_don_trouv
+        ,ref_aplic
+        ,dnr_ref_aplic
+    from afw_13_page
+/

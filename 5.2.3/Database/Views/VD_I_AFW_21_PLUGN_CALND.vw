@@ -1,0 +1,89 @@
+SET DEFINE OFF;
+create or replace force view vd_i_afw_21_plugn_calnd
+(
+  seqnc
+ ,enonc_pre_reqt
+ ,ref_dv_vue_deft
+ ,conct_propr_entet_gauch
+ ,conct_propr_entet_centr
+ ,conct_propr_entet_droit
+ ,indic_evenm_modfb
+ ,nom_table
+ ,coln_titre
+ ,coln_descr
+ ,coln_type
+ ,coln_aide_insta
+ ,coln_lien
+ ,coln_indic_journ_compl
+ ,coln_date_debut
+ ,coln_date_fin
+ ,date_creat
+ ,utils_creat
+ ,date_modfc
+ ,utils_modfc
+ ,largr_regn_calnd
+ ,coln_titre_aide_insta
+ ,indic_agend
+ ,agend_nom_table
+ ,agend_coln_titre
+ ,coln_valr
+ ,agend_coln_valr
+ ,agend_coln_coulr
+ ,code
+ ,dnr_ref_prodt
+ ,coln_agend
+ ,coln_ident
+ ,coln_date_journ_compl
+ ,coln_date_fin_journ_compl
+ ,nombr_mints_inter
+ ,heure_debut_norml
+ ,heure_fin_norml
+ ,heure_debut_exten
+ ,heure_fin_exten
+ ,coln_indic_evenm_modfb
+ ,ref_prodt
+)
+as
+  select seqnc
+        ,enonc_pre_reqt
+        ,ref_dv_vue_deft
+        ,conct_propr_entet_gauch
+        ,conct_propr_entet_centr
+        ,conct_propr_entet_droit
+        ,indic_evenm_modfb
+        ,nom_table
+        ,coln_titre
+        ,coln_descr
+        ,coln_type
+        ,coln_aide_insta
+        ,coln_lien
+        ,coln_indic_journ_compl
+        ,coln_date_debut
+        ,coln_date_fin
+        ,date_creat
+        ,utils_creat
+        ,date_modfc
+        ,utils_modfc
+        ,largr_regn_calnd
+        ,coln_titre_aide_insta
+        ,indic_agend
+        ,agend_nom_table
+        ,agend_coln_titre
+        ,coln_valr
+        ,agend_coln_valr
+        ,agend_coln_coulr
+        ,code
+        ,dnr_ref_prodt
+        ,coln_agend
+        ,coln_ident
+        ,coln_date_journ_compl
+        ,coln_date_fin_journ_compl
+        ,nombr_mints_inter
+        ,heure_debut_norml
+        ,heure_fin_norml
+        ,heure_debut_exten
+        ,heure_fin_exten
+        ,coln_indic_evenm_modfb
+        ,ref_prodt
+    from afw_21_plugn_calnd
+/

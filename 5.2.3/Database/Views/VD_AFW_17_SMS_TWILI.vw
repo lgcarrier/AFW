@@ -1,0 +1,51 @@
+SET DEFINE OFF;
+create or replace force view vd_afw_17_sms_twili
+(
+  seqnc
+ ,numr_de
+ ,numr_a
+ ,mesg
+ ,date_creat
+ ,utils_creat
+ ,date_modfc
+ ,utils_modfc
+ ,tw_sid
+ ,tw_status
+ ,tw_price
+ ,tw_uri
+ ,stat_soums
+ ,date_envoi_difr
+ ,ref_compt_twili
+ ,numr_mesg
+ ,nombr_mesg_totl
+ ,ref_mesg_precd
+ ,id_sesn
+ ,group_sms
+ ,repns_servr
+ ,sens
+)
+as
+  select seqnc
+        ,numr_de
+        ,numr_a
+        ,mesg
+        ,date_creat
+        ,utils_creat
+        ,date_modfc
+        ,utils_modfc
+        ,tw_sid
+        ,tw_status
+        ,tw_price
+        ,tw_uri
+        ,stat_soums
+        ,date_envoi_difr
+        ,ref_compt_twili
+        ,numr_mesg
+        ,nombr_mesg_totl
+        ,ref_mesg_precd
+        ,id_sesn
+        ,group_sms
+        ,repns_servr
+        ,sens
+    from vd_i_afw_17_sms_twili
+/

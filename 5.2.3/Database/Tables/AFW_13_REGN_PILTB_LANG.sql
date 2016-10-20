@@ -1,0 +1,33 @@
+SET DEFINE OFF;
+CREATE TABLE AFW_13_REGN_PILTB_LANG
+(
+  SEQNC           NUMBER(10),
+  REF_REGN_PILTB  NUMBER(10),
+  CONTN           CLOB,
+  REF_LANG        NUMBER(10),
+  DATE_CREAT      DATE,
+  UTILS_CREAT     VARCHAR2(123 BYTE),
+  DATE_MODFC      DATE,
+  UTILS_MODFC     VARCHAR2(123 BYTE),
+  DNR_REF_APLIC   NUMBER(10)
+)
+LOB (CONTN) STORE AS BASICFILE (
+  TABLESPACE  APEXFRAMEWORK
+  ENABLE      STORAGE IN ROW
+  CHUNK       8192
+  RETENTION
+  NOCACHE
+  LOGGING
+      STORAGE    (
+                  INITIAL          64K
+                  NEXT             1M
+                  MINEXTENTS       1
+                  MAXEXTENTS       UNLIMITED
+                  PCTINCREASE      0
+                  BUFFER_POOL      DEFAULT
+                 ))
+LOGGING 
+NOCOMPRESS 
+NOCACHE
+MONITORING
+/

@@ -1,0 +1,25 @@
+SET DEFINE OFF;
+CREATE TABLE AFW_20_MODL
+(
+  SEQNC                     NUMBER(10),
+  REF_DV_TYPE_MODL          NUMBER(10),
+  REF_VERSN                 NUMBER(10),
+  REF_MODL                  NUMBER(10),
+  NOM_ORGAN                 VARCHAR2(30 BYTE),
+  NUMR_SURCH                NUMBER(2),
+  INDIC_AGREG               VARCHAR2(1 BYTE)    DEFAULT 'N',
+  INDIC_PIPLN               VARCHAR2(1 BYTE)    DEFAULT 'N',
+  INDIC_DETRM               VARCHAR2(1 BYTE)    DEFAULT 'N',
+  INDIC_AUTHID_CURNT_UTILS  VARCHAR2(1 BYTE)    DEFAULT 'N',
+  INDIC_PUBLC               VARCHAR2(1 BYTE)    DEFAULT 'N',
+  DATE_CREAT                DATE,
+  UTILS_CREAT               VARCHAR2(123 BYTE),
+  DATE_MODFC                DATE,
+  UTILS_MODFC               VARCHAR2(123 BYTE),
+  VERSN_BD_APLIC            VARCHAR2(30 BYTE)
+)
+LOGGING 
+NOCOMPRESS 
+NOCACHE
+MONITORING
+/

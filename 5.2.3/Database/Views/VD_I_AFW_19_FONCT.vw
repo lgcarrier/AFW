@@ -1,0 +1,65 @@
+SET DEFINE OFF;
+create or replace force view vd_i_afw_19_fonct
+(
+  seqnc
+ ,code
+ ,date_creat
+ ,utils_creat
+ ,date_modfc
+ ,utils_modfc
+ ,titre_atrib1
+ ,ref_dv_type_atrib1
+ ,valr_deft_atrib1
+ ,titre_atrib2
+ ,titre_atrib3
+ ,titre_atrib4
+ ,titre_atrib5
+ ,ref_dv_type_atrib2
+ ,ref_dv_type_atrib3
+ ,ref_dv_type_atrib4
+ ,ref_dv_type_atrib5
+ ,valr_deft_atrib2
+ ,valr_deft_atrib3
+ ,valr_deft_atrib4
+ ,valr_deft_atrib5
+ ,ref_dv_type_actio
+ ,expre_actio
+ ,ref_dv_type_expre
+ ,indic_afect_input_html
+ ,indic_prevn_actio_deft
+ ,indic_cle
+ ,indic_boutn
+ ,condt_prise_charg
+)
+as
+  select seqnc
+        ,code
+        ,date_creat
+        ,utils_creat
+        ,date_modfc
+        ,utils_modfc
+        ,titre_atrib1
+        ,ref_dv_type_atrib1
+        ,valr_deft_atrib1
+        ,titre_atrib2
+        ,titre_atrib3
+        ,titre_atrib4
+        ,titre_atrib5
+        ,ref_dv_type_atrib2
+        ,ref_dv_type_atrib3
+        ,ref_dv_type_atrib4
+        ,ref_dv_type_atrib5
+        ,valr_deft_atrib2
+        ,valr_deft_atrib3
+        ,valr_deft_atrib4
+        ,valr_deft_atrib5
+        ,ref_dv_type_actio
+        ,expre_actio
+        ,ref_dv_type_expre
+        ,indic_afect_input_html
+        ,indic_prevn_actio_deft
+        ,indic_cle
+        ,indic_boutn
+        ,condt_prise_charg
+    from afw_19_fonct
+/

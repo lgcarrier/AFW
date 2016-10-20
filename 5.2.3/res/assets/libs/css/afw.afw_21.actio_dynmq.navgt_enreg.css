@@ -1,0 +1,44 @@
+.afw_21_navgt_enreg.precd,
+.afw_21_navgt_enreg.suivn {
+  /*  position: fixed;
+    height: 100%;
+    width: 30px;*/
+}
+
+.afw_21_navgt_enreg.precd {
+   /* bottom: 0;
+    left: 0;*/
+
+   /* position: absolute;
+    top: 7px;*/
+}
+
+.afw_21_navgt_enreg.suivn {
+  /*  bottom: 0;
+    right: 0;*/
+
+   /* position: absolute;
+    right: 0;
+    top: 7px;
+    width: 30px;*/
+}
+
+.afw_21_navgt_enreg .navgt_enreg_precd,
+.afw_21_navgt_enreg .navgt_enreg_suivn {
+    /* position: relative;
+     top: 50%;*/
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.afw_21_navgt_enreg .navgt_enreg_precd,
+.afw_21_navgt_enreg .navgt_enreg_suivn {
+    opacity: 0.3;
+}
+
+.afw_21_navgt_enreg .navgt_enreg_precd:hover,
+.afw_21_navgt_enreg .navgt_enreg_precd:focus,
+.afw_21_navgt_enreg .navgt_enreg_suivn:hover,
+.afw_21_navgt_enreg .navgt_enreg_suivn:focus {
+    opacity: 1;
+}

@@ -1,0 +1,6 @@
+SET DEFINE OFF;
+ALTER TABLE AFW_13_RESRC ADD (
+  CONSTRAINT AFW_13_RESRC_CK1
+  CHECK (indic_stock_meme_reprt in ('O', 'N'))
+  ENABLE VALIDATE)
+/

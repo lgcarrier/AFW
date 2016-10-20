@@ -1,0 +1,81 @@
+SET DEFINE OFF;
+create or replace force view vd_afw_21_plugn_arbre
+(
+  seqnc
+ ,code
+ ,enonc_pre_reqt
+ ,nom_table
+ ,coln_titre
+ ,coln_type
+ ,coln_valr
+ ,coln_aide_insta
+ ,coln_titre_aide_insta
+ ,coln_lien
+ ,coln_id
+ ,coln_id_parnt
+ ,enonc_condt
+ ,indic_comnc_par_racn
+ ,indic_comnc_par_coln_parnt_nul
+ ,enonc_condt_comnc_par
+ ,enonc_trier_par
+ ,indic_renmr
+ ,indic_deplc
+ ,largr_regn_arbre
+ ,hautr_regn_arbre
+ ,ref_plugn_arbre_noeud
+ ,image_sprit
+ ,date_creat
+ ,utils_creat
+ ,date_modfc
+ ,utils_modfc
+ ,type_icone_noeud
+ ,ref_formt_resrc
+ ,ref_resrc_comps
+ ,obten_json_arbre_nombr_niv
+ ,obten_json_noeud_nombr_niv
+ ,mode_cache
+ ,indic_charg_progr
+ ,nom_procd_glisr_elemn_arbre
+ ,nom_procd_depsr_elemn_arbre
+ ,ref_prodt
+)
+as
+  select seqnc
+        ,code
+        ,enonc_pre_reqt
+        ,nom_table
+        ,coln_titre
+        ,coln_type
+        ,coln_valr
+        ,coln_aide_insta
+        ,coln_titre_aide_insta
+        ,coln_lien
+        ,coln_id
+        ,coln_id_parnt
+        ,enonc_condt
+        ,indic_comnc_par_racn
+        ,indic_comnc_par_coln_parnt_nul
+        ,enonc_condt_comnc_par
+        ,enonc_trier_par
+        ,indic_renmr
+        ,indic_deplc
+        ,largr_regn_arbre
+        ,hautr_regn_arbre
+        ,ref_plugn_arbre_noeud
+        ,image_sprit
+        ,date_creat
+        ,utils_creat
+        ,date_modfc
+        ,utils_modfc
+        ,type_icone_noeud
+        ,ref_formt_resrc
+        ,ref_resrc_comps
+        ,obten_json_arbre_nombr_niv
+        ,obten_json_noeud_nombr_niv
+        ,mode_cache
+        ,indic_charg_progr
+        ,nom_procd_glisr_elemn_arbre
+        ,nom_procd_depsr_elemn_arbre
+        ,ref_prodt
+    from vd_i_afw_21_plugn_arbre
+/

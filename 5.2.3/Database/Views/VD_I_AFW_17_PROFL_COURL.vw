@@ -1,0 +1,65 @@
+SET DEFINE OFF;
+create or replace force view vd_i_afw_17_profl_courl
+(
+  seqnc
+ ,servr_sortn
+ ,port_sortn
+ ,domn
+ ,nom_envoy
+ ,adres_envoy
+ ,authe_methd_sortn
+ ,authe_usagr_sortn
+ ,authe_mdp_sortn
+ ,date_creat
+ ,utils_creat
+ ,date_modfc
+ ,utils_modfc
+ ,code
+ ,ref_domn
+ ,nom
+ ,descr
+ ,indic_ssl_sortn
+ ,servr_entra
+ ,port_entra
+ ,indic_ssl_entra
+ ,authe_methd_entra
+ ,authe_usagr_entra
+ ,authe_mdp_entra
+ ,protc_entra
+ ,adres_suprt
+ ,nom_suprt
+ ,indic_ajout_suprt_cci
+ ,indic_envir_sujet
+)
+as
+  select seqnc
+        ,servr_sortn
+        ,port_sortn
+        ,domn
+        ,nom_envoy
+        ,adres_envoy
+        ,authe_methd_sortn
+        ,authe_usagr_sortn
+        ,authe_mdp_sortn
+        ,date_creat
+        ,utils_creat
+        ,date_modfc
+        ,utils_modfc
+        ,code
+        ,ref_domn
+        ,nom
+        ,descr
+        ,indic_ssl_sortn
+        ,servr_entra
+        ,port_entra
+        ,indic_ssl_entra
+        ,authe_methd_entra
+        ,authe_usagr_entra
+        ,authe_mdp_entra
+        ,protc_entra
+        ,adres_suprt
+        ,nom_suprt
+        ,indic_ajout_suprt_cci
+        ,indic_envir_sujet
+    from afw_17_profl_courl
+/

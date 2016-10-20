@@ -1,0 +1,10 @@
+SET DEFINE OFF;
+ALTER TABLE AFW_13_INSTA_REGN_PILTB ADD (
+  CONSTRAINT AFW_13_INSTA_REGN_PILTB_CK1
+  CHECK (
+  indic_regn_activ = 'O'
+  or
+  indic_regn_activ = 'N'
+)
+  ENABLE VALIDATE)
+/

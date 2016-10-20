@@ -1,0 +1,31 @@
+SET DEFINE OFF;
+CREATE TABLE AFW_12_STAT
+(
+  SEQNC                    NUMBER(10),
+  REF_STRUC_APLIC          NUMBER(10),
+  ORDRE                    NUMBER(10),
+  CODE                     VARCHAR2(23 BYTE),
+  NOM                      VARCHAR2(60 BYTE),
+  DESCR                    VARCHAR2(4000 BYTE),
+  DATE_CREAT               DATE,
+  UTILS_CREAT              VARCHAR2(123 BYTE),
+  DATE_MODFC               DATE,
+  INDIC_INITL              VARCHAR2(1 BYTE)     DEFAULT 'N',
+  UTILS_MODFC              VARCHAR2(123 BYTE),
+  INDIC_STAT_UTILS         VARCHAR2(1 BYTE)     DEFAULT 'O',
+  REF_GROUP_STAT           NUMBER(10),
+  DNR_REF_PRODT            NUMBER(10),
+  LIBL_ACTIO               VARCHAR2(60 BYTE),
+  CATGR_STAT               VARCHAR2(23 BYTE)    DEFAULT 'ACTIO',
+  INDIC_FINAL              VARCHAR2(1 BYTE)     DEFAULT 'N',
+  DNR_REF_DOMN             NUMBER(10),
+  INDIC_INSTA_PROCS_APROB  VARCHAR2(1 BYTE)     DEFAULT 'N',
+  JOUR_PREVU               NUMBER(3),
+  HEURE_PREVU              NUMBER(2),
+  MINT_PREVU               NUMBER(2)
+)
+LOGGING 
+NOCOMPRESS 
+NOCACHE
+MONITORING
+/

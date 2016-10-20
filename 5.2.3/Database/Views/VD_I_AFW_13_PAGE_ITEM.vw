@@ -1,0 +1,51 @@
+SET DEFINE OFF;
+create or replace force view vd_i_afw_13_page_item
+(
+  seqnc
+ ,ref_page
+ ,id_apex
+ ,nom_apex
+ ,date_creat
+ ,utils_creat
+ ,date_modfc
+ ,utils_modfc
+ ,libl
+ ,indic_creat
+ ,indic_modfc
+ ,indic_suprs
+ ,indic_en_creat
+ ,indic_en_modfc
+ ,type_item
+ ,ref_opert
+ ,ref_mesg_aide
+ ,depsm_alias_coln
+ ,indic_rechr
+ ,indic_confr_sauvg
+ ,icone_bulle_aide
+ ,dnr_ref_aplic
+)
+as
+  select seqnc
+        ,ref_page
+        ,id_apex
+        ,nom_apex
+        ,date_creat
+        ,utils_creat
+        ,date_modfc
+        ,utils_modfc
+        ,libl
+        ,indic_creat
+        ,indic_modfc
+        ,indic_suprs
+        ,indic_en_creat
+        ,indic_en_modfc
+        ,type_item
+        ,ref_opert
+        ,ref_mesg_aide
+        ,depsm_alias_coln
+        ,indic_rechr
+        ,indic_confr_sauvg
+        ,icone_bulle_aide
+        ,dnr_ref_aplic
+    from afw_13_page_item
+/

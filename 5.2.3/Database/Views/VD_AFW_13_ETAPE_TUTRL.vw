@@ -1,0 +1,63 @@
+SET DEFINE OFF;
+create or replace force view vd_afw_13_etape_tutrl
+(
+  seqnc
+ ,nom
+ ,descr
+ ,ref_tutrl
+ ,ordre_presn
+ ,ref_page_item
+ ,selct_jquer_elemn_html
+ ,ref_mesg_titre
+ ,ref_mesg_descr
+ ,ref_dv_postn_afich
+ ,indic_afich_toile_fond
+ ,indic_mode_reflx
+ ,indic_afich_orphe
+ ,templ_html
+ ,on_next
+ ,on_prev
+ ,on_show
+ ,on_shown
+ ,on_hide
+ ,on_hidn
+ ,date_creat
+ ,utils_creat
+ ,date_modfc
+ ,utils_modfc
+ ,dnr_ref_prodt
+ ,ref_page
+ ,ref_tutrl_suivn
+ ,ref_etape_tutrl_suivn
+)
+as
+  select seqnc
+        ,nom
+        ,descr
+        ,ref_tutrl
+        ,ordre_presn
+        ,ref_page_item
+        ,selct_jquer_elemn_html
+        ,ref_mesg_titre
+        ,ref_mesg_descr
+        ,ref_dv_postn_afich
+        ,indic_afich_toile_fond
+        ,indic_mode_reflx
+        ,indic_afich_orphe
+        ,templ_html
+        ,on_next
+        ,on_prev
+        ,on_show
+        ,on_shown
+        ,on_hide
+        ,on_hidn
+        ,date_creat
+        ,utils_creat
+        ,date_modfc
+        ,utils_modfc
+        ,dnr_ref_prodt
+        ,ref_page
+        ,ref_tutrl_suivn
+        ,ref_etape_tutrl_suivn
+    from vd_i_afw_13_etape_tutrl
+/

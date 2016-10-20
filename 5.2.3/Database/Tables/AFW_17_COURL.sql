@@ -1,0 +1,44 @@
+SET DEFINE OFF;
+CREATE TABLE AFW_17_COURL
+(
+  SEQNC             NUMBER(10),
+  DATE_CREAT        DATE,
+  UTILS_CREAT       VARCHAR2(123 BYTE),
+  DATE_MODFC        DATE,
+  UTILS_MODFC       VARCHAR2(123 BYTE),
+  SERVR             VARCHAR2(100 BYTE),
+  PORT              NUMBER                      DEFAULT 25,
+  DOMN              VARCHAR2(100 BYTE),
+  NOM_ENVOY         VARCHAR2(100 BYTE),
+  ADRES_ENVOY       VARCHAR2(100 BYTE),
+  SUJET             VARCHAR2(1000 BYTE),
+  INDIC_FORMT_HTML  VARCHAR2(1 BYTE)            DEFAULT 'N',
+  AUTHE_METHD       VARCHAR2(23 BYTE),
+  AUTHE_USAGR       VARCHAR2(100 BYTE),
+  AUTHE_MDP         VARCHAR2(100 BYTE),
+  CORPS             CLOB,
+  NOMBR_TENTV       NUMBER                      DEFAULT 0,
+  NOMBR_TENTV_MAX   NUMBER                      DEFAULT 5,
+  SENS              VARCHAR2(5 BYTE),
+  STAT_SOUMS        VARCHAR2(30 BYTE)
+)
+LOB (CORPS) STORE AS BASICFILE (
+  TABLESPACE  APEXFRAMEWORK
+  ENABLE      STORAGE IN ROW
+  CHUNK       8192
+  RETENTION
+  NOCACHE
+  LOGGING
+      STORAGE    (
+                  INITIAL          64K
+                  NEXT             1M
+                  MINEXTENTS       1
+                  MAXEXTENTS       UNLIMITED
+                  PCTINCREASE      0
+                  BUFFER_POOL      DEFAULT
+                 ))
+LOGGING 
+NOCOMPRESS 
+NOCACHE
+MONITORING
+/

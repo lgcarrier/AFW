@@ -1,0 +1,49 @@
+SET DEFINE OFF;
+create or replace force view vd_afw_17_sms_twili_entra
+(
+  seqnc
+ ,tw_recpt_accountsid
+ ,tw_recpt_apiversion
+ ,tw_recpt_body
+ ,tw_recpt_from
+ ,tw_recpt_fromcity
+ ,tw_recpt_fromcountry
+ ,tw_recpt_fromstate
+ ,tw_recpt_fromzip
+ ,tw_recpt_smsmessagesid
+ ,tw_recpt_smssid
+ ,tw_recpt_smsstatus
+ ,tw_recpt_to
+ ,tw_recpt_tocity
+ ,tw_recpt_tocountry
+ ,tw_recpt_tostate
+ ,tw_recpt_tozip
+ ,date_creat
+ ,utils_creat
+ ,date_modfc
+ ,utils_modfc
+)
+as
+  select seqnc
+        ,tw_recpt_accountsid
+        ,tw_recpt_apiversion
+        ,tw_recpt_body
+        ,tw_recpt_from
+        ,tw_recpt_fromcity
+        ,tw_recpt_fromcountry
+        ,tw_recpt_fromstate
+        ,tw_recpt_fromzip
+        ,tw_recpt_smsmessagesid
+        ,tw_recpt_smssid
+        ,tw_recpt_smsstatus
+        ,tw_recpt_to
+        ,tw_recpt_tocity
+        ,tw_recpt_tocountry
+        ,tw_recpt_tostate
+        ,tw_recpt_tozip
+        ,date_creat
+        ,utils_creat
+        ,date_modfc
+        ,utils_modfc
+    from vd_i_afw_17_sms_twili_entra
+/

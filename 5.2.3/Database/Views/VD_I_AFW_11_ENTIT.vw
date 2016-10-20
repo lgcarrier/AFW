@@ -1,0 +1,59 @@
+SET DEFINE OFF;
+create or replace force view vd_i_afw_11_entit
+(
+  seqnc
+ ,nom
+ ,nom_table_tempr
+ ,nom_table_ereur
+ ,indic_creer_ocurn
+ ,indic_modif_ocurn
+ ,indic_suprm_ocurn
+ ,ref_versn
+ ,date_creat
+ ,utils_creat
+ ,date_modfc
+ ,utils_modfc
+ ,ordre_exect
+ ,dnr_ref_prodt
+ ,code
+ ,indic_force_selct
+ ,longr_bloc
+ ,indic_nouvl_entit
+ ,niv_inclu_migrt
+ ,confg_inclu_migrt
+ ,ref_atrib_entit_supr
+ ,indic_expor_tabl_index
+ ,indic_suprm_don_prodt
+ ,indic_deplm_inter_prodt
+ ,where_claus_custm
+ ,ref_schem_prodt
+)
+as
+  select seqnc
+        ,nom
+        ,nom_table_tempr
+        ,nom_table_ereur
+        ,indic_creer_ocurn
+        ,indic_modif_ocurn
+        ,indic_suprm_ocurn
+        ,ref_versn
+        ,date_creat
+        ,utils_creat
+        ,date_modfc
+        ,utils_modfc
+        ,ordre_exect
+        ,dnr_ref_prodt
+        ,code
+        ,indic_force_selct
+        ,longr_bloc
+        ,indic_nouvl_entit
+        ,niv_inclu_migrt
+        ,confg_inclu_migrt
+        ,ref_atrib_entit_supr
+        ,indic_expor_tabl_index
+        ,indic_suprm_don_prodt
+        ,indic_deplm_inter_prodt
+        ,where_claus_custm
+        ,ref_schem_prodt
+    from afw_11_entit
+/
